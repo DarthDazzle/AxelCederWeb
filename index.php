@@ -13,16 +13,16 @@
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/general.js"></script>
 
-	<link rel="shortcut icon" href="resources/image/logo/ico.png" type="image/png">			
+	<link rel="shortcut icon" href="resources/image/logo/ico.png" type="image/png">
 </head>
 <?php
-	include 'header.php';
+include 'header.php';
 ?>
 <body>
 	<div id="fullpage">
 		<script type="text/javascript">
 			$(document).ready(function() {
-		
+
 				$('#fullpage').fullpage({
 					verticalCentered: false,
 					anchors: ['home', 'about', 'project', 'contact'],
@@ -44,29 +44,25 @@
 			</div>
 		</div>
 		<div class="section" id="section1" style="text-align:left">
-		<h1 style="text-align:center"><a href="/about"><?php echo $lang['about']?></a></h1>
+		<h1 style="text-align:center"><a href="/about"><?php echo $lang['about'] ?></a></h1>
 		<img src="../resources/image/about/uppr.png" class="cornerPara" id="show" style="opacity:0">
 		</div>
 		<div class="section" id="section2">
-		<h1><a href="/projects"><?php echo $lang['project']?></a></h1>
+		<h1><a href="/projects"><?php echo $lang['project'] ?></a></h1>
 		</div>
 		<div class="section" id="section3"  style="padding-top:30px" >
-			<h1 style="padding-top:10vh"><?php echo $lang['contact']?><br><br></h1>
-			<form action="#" id="form" method="post" name="form">
-				<input id="vname" name="vname" placeholder="<?php echo $lang['name']?>" type="text" value="">
-				<br>
-				<input id="vemail" name="vemail" placeholder="<?php echo $lang['email']?>" type="text" value="">
-				<br>
-				<textarea id="msg" name="msg" placeholder="<?php echo $lang['textInput']?>"></textarea>
-				<br>
-				<input id="send" onclick="sendMail()" name="submit" type="button" value=<?php echo $lang['submit']?>>
-			</form>
-			<div id="msgSent1" style="opacity:0"><h3><br><br>Fill All Fields</h3></div>
-			<div id="msgSent2" style="opacity:0"><h3><br><br>Faulty Email</h3></div>
-			<div id="msgSent3" style="opacity:0"><h3><br><br>Message Sent</h3></div>			
-		</div>
+			<h1 style="padding-top:10vh"><?php echo $lang['contact'] ?><br><br></h1>
+			<script src="https://www.google.com/recaptcha/api.js?render=6LckV5IUAAAAAGIevj7wwo-aLOq8bM91j6pOMctN"></script>
+			<script>
+			grecaptcha.ready(function() {
+				grecaptcha.execute('6LckV5IUAAAAAGIevj7wwo-aLOq8bM91j6pOMctN', {action: 'homepage'}).then(function(token) {
+					
+				});
+			});
+			</script>
+  		</div>S
 	</div>
-	
+
 
 <script type='text/javascript'>
 	function sendMail() {
@@ -112,5 +108,6 @@
 	return false;
 }
 	</script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 <html>
