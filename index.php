@@ -52,19 +52,8 @@
 		</div>
 		<div class="section" id="section3"  style="padding-top:30px" >
 			<h1 style="padding-top:10vh"><?php echo $lang['contact']?><br><br></h1>
-			<form action="#" id="form" method="post" name="form">
-				<input id="vname" name="vname" placeholder="<?php echo $lang['name']?>" type="text" value="">
-				<br>
-				<input id="vemail" name="vemail" placeholder="<?php echo $lang['email']?>" type="text" value="">
-				<br>
-				<textarea id="msg" name="msg" placeholder="<?php echo $lang['textInput']?>"></textarea>
-				<br>
-				<input id="send" onclick="sendMail()" name="submit" type="button" value=<?php echo $lang['submit']?>>
-			</form>
-			<div id="msgSent1" style="opacity:0"><h3><br><br>Fill All Fields</h3></div>
-			<div id="msgSent2" style="opacity:0"><h3><br><br>Faulty Email</h3></div>
-			<div id="msgSent3" style="opacity:0"><h3><br><br>Message Sent</h3></div>			
-		</div>
+			<div class="g-recaptcha" data-sitekey="6LckV5IUAAAAAGIevj7wwo-aLOq8bM91j6pOMctN"></div>			
+		</div>S
 	</div>
 	
 
@@ -112,5 +101,6 @@
 	return false;
 }
 	</script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 <html>
