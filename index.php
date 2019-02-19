@@ -1,8 +1,8 @@
 <! doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <?php
-$site_key = 'YOUR_SITE_KEY';
-$secret_key = 'YOUR_SECRET_KEY';
+$site_key = '6LckV5IUAAAAAGIevj7wwo-aLOq8bM91j6pOMctN';
+$secret_key = '6LckV5IUAAAAAGL02EJ7j6SHwonfTSNWZR1REp9D';
  
 if (isset($_POST['g-recaptcha-response'])) {
  
