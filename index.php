@@ -1,5 +1,22 @@
 <! doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+<?php
+$site_key = 'YOUR_SITE_KEY';
+$secret_key = 'YOUR_SECRET_KEY';
+ 
+if (isset($_POST['g-recaptcha-response'])) {
+ 
+    //get verify response data
+    $verifyCaptchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_key.'&response='.$_POST['g-recaptcha-response']);
+    $responseCaptchaData = json_decode($verifyCaptchaResponse);
+    if($responseCaptchaData->success) {
+        echo 'Captcha verified';
+        //proceed with form values
+    } else {
+        echo 'Verification failed';
+    }
+}
+?>
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -51,14 +68,16 @@ include 'header.php';
 		<h1><a href="/projects"><?php echo $lang['project'] ?></a></h1>
 		</div>
 		<div class="section" id="section3"  style="padding-top:30px" >
-			<h1 style="padding-top:10vh"><?php echo $lang['contact'] ?><br><br></h1>
-			<script src="https://www.google.com/recaptcha/api.js?render=6LckV5IUAAAAAGIevj7wwo-aLOq8bM91j6pOMctN"></script>
+			<h1 style="padding-top:10vh"><?php echo $lang['contact'] ?><br><br></h1>			 
+			<form method="post" id="userForm">
+				<button class="g-recaptcha btn btn-primary" data-sitekey="<?php echo $site_key; ?>" data-callback="submitForm">Submit</button>
+			</form>
+			
+			<script src='https://www.google.com/recaptcha/api.js'></script>
 			<script>
-			grecaptcha.ready(function() {
-				grecaptcha.execute('6LckV5IUAAAAAGIevj7wwo-aLOq8bM91j6pOMctN', {action: 'homepage'}).then(function(token) {
-					
-				});
-			});
+			function submitForm() {
+				document.getElementById('userForm').submit();
+			}
 			</script>
   		</div>S
 	</div>
@@ -108,6 +127,5 @@ include 'header.php';
 	return false;
 }
 	</script>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 <html>
