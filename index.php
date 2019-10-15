@@ -1,5 +1,5 @@
 <! doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- <html xmlns="http://www.w3.org/1999/xhtml">
 <?php
 $site_key = '6LckV5IUAAAAAGIevj7wwo-aLOq8bM91j6pOMctN';
 $secret_key = '6LckV5IUAAAAAGL02EJ7j6SHwonfTSNWZR1REp9D';
@@ -16,7 +16,7 @@ if (isset($_POST['g-recaptcha-response'])) {
         echo 'Verification failed';
     }
 }
-?>
+?> -->
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -67,7 +67,7 @@ include 'header.php';
 		<div class="section" id="section2">
 		<h1><a href="/projects"><?php echo $lang['project'] ?></a></h1>
 		</div>
-		<div class="section" id="section3"  style="padding-top:30px" >
+		<!-- <div class="section" id="section3"  style="padding-top:30px" >
 			<h1 style="padding-top:10vh"><?php echo $lang['contact'] ?><br><br></h1>			 
 			<form method="post" id="userForm">
 				<button class="g-recaptcha btn btn-primary" data-sitekey="<?php echo $site_key; ?>" data-callback="submitForm">Submit</button>
@@ -79,10 +79,10 @@ include 'header.php';
 				document.getElementById('userForm').submit();
 			}
 			</script>
-  		</div>S
+  		</div> -->
 	</div>
 
-
+<!-- 
 <script type='text/javascript'>
 	function sendMail() {
 	$(document.getElementById("msgSent1")).css({'opacity' : '0'});
@@ -126,6 +126,6 @@ include 'header.php';
 
 	return false;
 }
-	</script>
+	</script> -->
 </body>
 <html>

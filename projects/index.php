@@ -19,6 +19,9 @@
 		<h1><?php echo $lang['project']?></h1>
 		</div>
 		<div id="proj1">
+			Rebuilding site to make room for this: <br>
+				<a href="projects/airhockey/index.php"><img src="../resources/image/projects/game.JPG"  /></a> <br><br>
+			Click image to play, it's a resulting byproduct of a project within Systemconstruction
 		</div>
 	</body>
 </html>

@@ -47,6 +47,11 @@ h1{
 
 #proj1 {
 	height:40vh;
+	max-width: 50%;
+	margin: auto;
+	padding: 50px;
+	font-family: 'Arkhip';
+	color:#F4F4F4;
 }
 /* Defining each section background and styles
 * --------------------------------------- */
@@ -316,3 +321,4 @@ div#seg2 {
     transition-duration: 1s;
 	-webkit-transition-duration: 1s;
 }
+
