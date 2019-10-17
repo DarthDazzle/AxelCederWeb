@@ -13,55 +13,58 @@
 <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
 
 <?php $posts = getPublishedPosts(); ?>
-
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Axel Ceder - Projects</title>
-		<link rel="stylesheet" href="../css/styles.css">
-		<script src="../js/jquery-3.1.0.min.js"></script>
-		<link rel="shortcut icon" href="../resources/image/logo/ico.png" type="image/png">
-		
-	</head>
-	
 <!DOCTYPE html>	
 
-	<?php include '../header.php';?>
-	<body>
-		<div id="fullpage">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Axel Ceder - Projects</title>
+	<link rel="stylesheet" href="../css/styles.css">
+	<script src="../js/jquery-3.1.0.min.js"></script>
+	<link rel="shortcut icon" href="../resources/image/logo/ico.png" type="image/png">
+	
+</head>
+	
+
+
+
+<body>
+<?php include '../header.php';?>
+	<div id="fullpage">
 		<div class="section" id="section2" style="height:100%">
-		<h1><?php echo $lang['project']?></h1>
+			<h1><?php echo $lang['project']?></h1>
 		</div>
-		<div class="container">
+	</div>
+	<div class="container">
 
-		<div class="content">
-			<h2 class="content-title">Recent Articles</h2>
-			<hr>
-			<?php foreach ($posts as $post): ?>
-				<div class="post" style="margin-left: 0px;">
-					<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
-					<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
-						<div class="post_info">
-							<h3><?php echo $post['title'] ?></h3>
-							<div class="info">
-								<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
-								<span class="read_more">Read more...</span>
-							</div>
+	<div class="content">
+		<h2 class="content-title">Recent Articles</h2>
+		<hr>
+		<?php foreach ($posts as $post): ?>
+			<div class="post" style="margin-left: 0px;">
+				<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
+				<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
+					<div class="post_info">
+						<h3><?php echo $post['title'] ?></h3>
+						<div class="info">
+							<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
+							<span class="read_more">Read more...</span>
 						</div>
-					</a>
-				</div>
-			<?php endforeach ?>
-			<!-- more content still to come here ... -->
-		</div>
-		<!-- Page content -->
-		
+					</div>
+				</a>
+			</div>
+		<?php endforeach ?>
+		<!-- more content still to come here ... -->
+	</div>
+	<!-- Page content -->
+	
 
-		</div>
-		<!--
-		<div id="proj1">
-			Rebuilding site to make room for this: <br>
-				<a href="airhockey/index.php"><img src="../resources/image/projects/game.JPG"  /></a> <br><br>
-			Click image to play, it's a resulting byproduct of a project within Systemconstruction
-		</div>
-		-->
-	</body>
+	</div>
+	<!--
+	<div id="proj1">
+		Rebuilding site to make room for this: <br>
+			<a href="airhockey/index.php"><img src="../resources/image/projects/game.JPG"  /></a> <br><br>
+		Click image to play, it's a resulting byproduct of a project within Systemconstruction
+	</div>
+	-->
+</body>
