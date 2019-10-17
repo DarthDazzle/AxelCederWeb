@@ -13,7 +13,7 @@
 <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
 
 <?php $posts = getPublishedPosts(); ?>
-<?php include '../header.php';?>
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
 	
 <!DOCTYPE html>	
 
-	
+	<?php include '../header.php';?>
 	<body>
 		<div id="fullpage">
 		<div class="section" id="section2" style="height:100%">

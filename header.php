@@ -1,4 +1,4 @@
-<script type='text/javascript' src="../js/header.js"></script>
+<!--<script type='text/javascript' src="../js/header.js"></script> -->
 <?php require 'langsInit.php';?>
 <div id="header">
 	<ul id="nav">
