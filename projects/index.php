@@ -32,7 +32,7 @@
 
 <body>
 
-	<div id="fullpage">
+	<div class="over">
 		<div class="section" id="section2" style="height:100%">
 			<h1><?php echo $lang['project']?></h1>
 		</div>
