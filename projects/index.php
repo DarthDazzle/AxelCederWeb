@@ -11,10 +11,12 @@
 		define('BASE_URL', 'http://localhost/projects/');
 ?>
 <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
-<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+
 
 <?php $posts = getPublishedPosts(); ?>
 <!doctype html>
+
+<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
 
 <html>
 
