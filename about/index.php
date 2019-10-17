@@ -19,6 +19,7 @@
 		<h1 style="text-align:center"><?php echo $lang['about']?></h1>
 		<img src="../resources/image/about/uppr.png" class="cornerPara">
 		</div>
+		</div>
 		<div class="textBox"><?php echo $lang['aboutText']?></div>
 		
 	</body>
