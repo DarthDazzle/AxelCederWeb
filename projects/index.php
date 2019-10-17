@@ -14,7 +14,7 @@
 
 <?php $posts = getPublishedPosts(); ?>
 <!DOCTYPE html>	
-
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,10 +26,10 @@
 </head>
 	
 
-
+<?php include '../header.php';?>
 
 <body>
-<?php include '../header.php';?>
+
 	<div id="fullpage">
 		<div class="section" id="section2" style="height:100%">
 			<h1><?php echo $lang['project']?></h1>
@@ -68,3 +68,4 @@
 	</div>
 	-->
 </body>
+</html>
