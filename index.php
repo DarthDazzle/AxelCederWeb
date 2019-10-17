@@ -61,11 +61,11 @@ include 'header.php';
 			</div>
 		</div>
 		<div class="section" id="section1" style="text-align:left">
-		<h1 style="text-align:center"><a href="/about"><?php echo $lang['about'] ?></a></h1>
-		<img src="../resources/image/about/uppr.png" class="cornerPara" id="show" style="opacity:0">
+			<h1 style="text-align:center"><a href="/about"><?php echo $lang['about'] ?></a></h1>
+			<img src="../resources/image/about/uppr.png" class="cornerPara" id="show" style="opacity:0">
 		</div>
 		<div class="section" id="section2">
-		<h1><a href="/projects"><?php echo $lang['project'] ?></a></h1>
+			<h1 style="text-align:center"><a href="/projects"><?php echo $lang['project'] ?></a></h1>
 		</div>
 		<!-- <div class="section" id="section3"  style="padding-top:30px" >
 			<h1 style="padding-top:10vh"><?php echo $lang['contact'] ?><br><br></h1>			 
