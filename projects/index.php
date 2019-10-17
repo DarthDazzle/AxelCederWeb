@@ -37,21 +37,27 @@
 		</div>
 		<div class="container">
 
-		<!-- Page content -->
-		<?php foreach ($posts as $post): ?>
-			<div class="post" style="margin-left: 0px;">
-				<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
-				<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
-					<div class="post_info">
-						<h3><?php echo $post['title'] ?></h3>
-						<div class="info">
-							<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
-							<span class="read_more">Read more...</span>
+		<div class="content">
+			<h2 class="content-title">Recent Articles</h2>
+			<hr>
+			<?php foreach ($posts as $post): ?>
+				<div class="post" style="margin-left: 0px;">
+					<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
+					<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
+						<div class="post_info">
+							<h3><?php echo $post['title'] ?></h3>
+							<div class="info">
+								<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
+								<span class="read_more">Read more...</span>
+							</div>
 						</div>
-					</div>
-				</a>
-			</div>
-		<?php endforeach ?>
+					</a>
+				</div>
+			<?php endforeach ?>
+			<!-- more content still to come here ... -->
+		</div>
+		<!-- Page content -->
+		
 
 		</div>
 		<!--
