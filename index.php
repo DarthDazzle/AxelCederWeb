@@ -1,4 +1,4 @@
-<! doctype html>
+<!doctype html>
 <!-- <html xmlns="http://www.w3.org/1999/xhtml">
 <?php
 $site_key = '6LckV5IUAAAAAGIevj7wwo-aLOq8bM91j6pOMctN';
