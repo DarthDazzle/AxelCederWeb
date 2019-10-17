@@ -20,8 +20,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Axel Ceder - Projects</title>
 	<link rel="stylesheet" href="../css/styles.css">
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<script src="../js/jquery-3.1.0.min.js"></script>
 	<link rel="shortcut icon" href="../resources/image/logo/ico.png" type="image/png">
 	
@@ -32,7 +30,7 @@
 
 <body>
 
-	<div class="over">
+	<div id="over">
 		<div class="section" id="section2" style="height:100%">
 			<h1><?php echo $lang['project']?></h1>
 		</div>
