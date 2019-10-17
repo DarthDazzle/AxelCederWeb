@@ -11,6 +11,7 @@
 		define('BASE_URL', 'http://localhost/projects/');
 ?>
 <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
+<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
 
 <?php $posts = getPublishedPosts(); ?>
 <! doctype html>
@@ -22,7 +23,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Axel Ceder - Projects</title>
 		<link rel="stylesheet" href="../css/styles.css">
-		<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+		
 		<link rel="shortcut icon" href="../resources/image/logo/ico.png" type="image/png">
 		
 	</head>
