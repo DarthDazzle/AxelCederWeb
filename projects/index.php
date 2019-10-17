@@ -13,20 +13,20 @@
 <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
 
 <?php $posts = getPublishedPosts(); ?>
-
+<?php include '../header.php';?>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Axel Ceder - Projects</title>
 		<link rel="stylesheet" href="../css/styles.css">
-		<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+		<script src="../js/jquery-3.1.0.min.js"></script>
 		<link rel="shortcut icon" href="../resources/image/logo/ico.png" type="image/png">
 		
 	</head>
 	
-	
+<!DOCTYPE html>	
 
-	<?php include '../header.php';?>
+	
 	<body>
 		<div id="fullpage">
 		<div class="section" id="section2" style="height:100%">
@@ -65,4 +65,3 @@
 		</div>
 		-->
 	</body>
-</html>
