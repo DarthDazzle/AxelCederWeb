@@ -16,11 +16,12 @@
 <?php $posts = getPublishedPosts(); ?>
 <!doctype html>
 
-<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+
 
 <html>
 
 	<head>
+		<script src="../js/jquery-3.1.0.min.js"></script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Axel Ceder - Projects</title>
