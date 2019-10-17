@@ -13,7 +13,6 @@
 <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
 
 <?php $posts = getPublishedPosts(); ?>
-<!doctype html>
 
 	<head>
 		<meta charset="utf-8">
