@@ -8,7 +8,7 @@ $(document).ready(function(){
 	} else {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { 	
 		$('#imgLogo').fadeTo(0,1);
-		$('#over').animate({ backgroundColor: "#343538" }, 0);
+		$('.over').animate({ backgroundColor: "#343538" }, 0);
 		document.getElementById("toHide").style.display="none";  
 		// some code..
 		window.scrollTo(0,1);
