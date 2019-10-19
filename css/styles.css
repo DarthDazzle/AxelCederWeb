@@ -361,7 +361,7 @@ div#seg2 {
 	font-family: 'Averia Serif Libre', cursive;
 }
 .content .post {
-	width: 335px;
+	width: 80%;
 	margin: 9px;
 	min-height: 320px;
 	float: left;
