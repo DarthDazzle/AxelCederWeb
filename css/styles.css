@@ -341,8 +341,9 @@ div#seg2 {
 }
 
 .container {
-	width: 80%;
+	width: 80vw;
 	margin: 0px auto;
+	margin-left: 10vw;
 }
 
 .content {
@@ -361,13 +362,16 @@ div#seg2 {
 	font-family: 'Averia Serif Libre', cursive;
 }
 .content .post {
-	width: 80%;
+	width: 80vw;
 	margin: 9px;
 	min-height: 320px;
 	float: left;
 	border-radius: 2px;
-	border: 1px solid #b3b3b3;
 	position: relative;
+	text-align: center;
+	-webkit-box-shadow: inset 0px 3px 15px 7px rgba(0,0,0,0.37); 
+	box-shadow: inset 0px 3px 15px 7px rgba(0,0,0,0.37);
+	background: #343538;
 }
 .content .post .category {
 	margin-top: 0px;
