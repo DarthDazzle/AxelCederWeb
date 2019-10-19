@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	if (document.referrer.indexOf(location.protocol + "//" + location.host) === 0) {
 		$('#imgLogo').fadeTo(0,1);
-		$('#over').animate({ backgroundColor: "#343538" }, 0);
+		$('.over').animate({ backgroundColor: "#343538" }, 0);
 		document.getElementById("toHide").style.display="none";  
 		// some code..
 		window.scrollTo(0,1);
