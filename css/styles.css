@@ -64,6 +64,11 @@ h1{
 	text-align: center; /*handles the horizontal centering*/
 }
 
+.bottombox {
+	position: absolute;
+	top: 100vh;
+}
+
 div#form_sample{
 text-align:center;
 border:1px solid #ccc;
@@ -315,11 +320,6 @@ div#seg2 {
 	margin-left: 100vw;
     transition-duration: 1s;
 	-webkit-transition-duration: 1s;
-}
-
-.BottomBox {
-	position: absolute;
-	top: 100vh;
 }
 
 .container {

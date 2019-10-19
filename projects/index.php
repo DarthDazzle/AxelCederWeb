@@ -19,12 +19,12 @@
 
 <body>
 
-	<div id="over">
+	<div class="over">
 		<div class="section" id="section2" style="height:100%">
 			<h1><?php echo $lang['project']?></h1>
 		</div>
 	</div>
-	<div class="BottomBox">
+	<div class="bottombox">
 		<div class="container">
 
 			<div class="content">
