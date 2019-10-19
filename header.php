@@ -1,6 +1,6 @@
 <!--<script type='text/javascript' src="../js/header.js"></script> -->
 <?php require 'langsInit.php';?>
-<div id="header">
+<div id="header" style="overflow: hidden">
 	<ul id="nav">
 				<li class="menuItems"><a href="/"><?php echo $lang['home']?></a>
 				<li class="menuItems"><a href="/about"><?php echo $lang['about']?></a></li>
