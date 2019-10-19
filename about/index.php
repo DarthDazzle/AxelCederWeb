@@ -20,7 +20,11 @@
 				<img src="../resources/image/about/uppr.png" class="cornerPara">
 			</div>
 		</div>
-		<div class="textBox"><?php echo $lang['aboutText']?></div>
+		<div class="BottomBox">
+			<div class="textBox">
+				<?php echo $lang['aboutText']?>
+			</div>
+		</div>
 		
 	</body>
 </html>

@@ -317,6 +317,11 @@ div#seg2 {
 	-webkit-transition-duration: 1s;
 }
 
+#BottomBox {
+	position: absolute;
+	top: 100vh;
+}
+
 .container {
 	width: 80%;
 	margin: 0px auto;
