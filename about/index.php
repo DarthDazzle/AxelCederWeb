@@ -13,7 +13,7 @@
 	</head>
 	
 	<?php include '../header.php'; ?>
-	<body>
+	<body style="overflow-y:scroll">
 		<div id="over">
 			<div class="section" id="section1" style="text-align:left; height:100%">
 				<h1 style="text-align:center"><?php echo $lang['about']?></h1>
