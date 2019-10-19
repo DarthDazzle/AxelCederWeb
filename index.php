@@ -50,7 +50,7 @@ include 'header.php';
 			});
 		</script>
 		<div class="section" id="section0">
-			<div id="over">
+			<div class="over">
 				<span class="Centerer"></span>
 				<video class="video" width="960" height="540" muted autoplay id="toHide">
 					<source src="resources/video/logo/intro.webm" type="video/webm">
