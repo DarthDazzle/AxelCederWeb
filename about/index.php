@@ -13,16 +13,18 @@
 	</head>
 	
 	<?php include '../header.php'; ?>
-	<body style="overflow-y:scroll">
-		<div id="over">
-			<div class="section" id="section1" style="text-align:left; height:100%">
-				<h1 style="text-align:center"><?php echo $lang['about']?></h1>
-				<img src="../resources/image/about/uppr.png" class="cornerPara">
+	<body>
+		<div  style="overflow-y:scroll">
+			<div id="over">
+				<div class="section" id="section1" style="text-align:left; height:100%">
+					<h1 style="text-align:center"><?php echo $lang['about']?></h1>
+					<img src="../resources/image/about/uppr.png" class="cornerPara">
+				</div>
 			</div>
-		</div>
-		<div class="bottombox">
-			<div class="textBox">
-				<?php echo $lang['aboutText']?>
+			<div class="bottombox">
+				<div class="textBox">
+					<?php echo $lang['aboutText']?>
+				</div>
 			</div>
 		</div>
 		
