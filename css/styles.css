@@ -370,7 +370,7 @@ div#seg2 {
 	position: relative;
 	text-align: center;
 	-webkit-box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52); 
-	box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52);
+	box-shadow: inset 7px 7px 10px 5px rgba(0,0,0,0.52);
 	border: 3px inset #55575B;
 	background: #343538;
 }
