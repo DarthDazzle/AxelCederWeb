@@ -28,8 +28,6 @@
 		<div class="container">
 
 			<div class="content">
-				<h2 class="content-title">Recent Articles</h2>
-				<hr>
 				<?php foreach ($posts as $post): ?>
 					<div class="post" style="margin-left: 0px;">
 						<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
