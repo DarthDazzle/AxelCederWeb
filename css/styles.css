@@ -369,8 +369,8 @@ div#seg2 {
 	border-radius: 2px;
 	position: relative;
 	text-align: center;
-	-webkit-box-shadow: inset 0px 3px 15px 7px rgba(0,0,0,0.37); 
-	box-shadow: inset 0px 5px 15px 9px rgba(0,0,0,0.37);
+	-webkit-box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52); 
+	box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52);
 	border: 3px inset #55575B;
 	background: #343538;
 }
