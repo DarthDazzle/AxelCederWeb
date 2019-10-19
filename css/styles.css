@@ -364,15 +364,12 @@ div#seg2 {
 .content .post {
 	width: 80vw;
 	margin: 9px;
-	min-height: 320px;
 	float: left;
 	border-radius: 2px;
 	position: relative;
-	text-align: center;
-	-webkit-box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52); 
-	box-shadow: inset 7px 7px 10px 5px rgba(0,0,0,0.52);
 	border: 3px inset #55575B;
 	background: #343538;
+	vertical-align: top;
 }
 .content .post .category {
 	margin-top: 0px;
@@ -395,9 +392,10 @@ div#seg2 {
 	opacity: 1;
 }
 .content .post .post_image {
-	height: 100%;
+	width: 30vw;
 	text-align: left;
 	background-size: 100%;
+	display: inline-block;
 }
 
 .content .post .post_info {
