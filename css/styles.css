@@ -7,8 +7,12 @@
 	font-family: 'Tratex';
 	src: url('../fonts/trats.ttf');
 }		
-
-
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arkhip';
+	color:#F4F4F4;
+}
 body {
 	background-color: #343538;
 	overflow-x:hidden;
