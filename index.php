@@ -36,7 +36,7 @@ if (isset($_POST['g-recaptcha-response'])) {
 include 'header.php';
 ?>
 <body>
-	<div id="fullpage">
+	<div id="fullpage" style="overflow-y:scroll">
 		<script type="text/javascript">
 			$(document).ready(function() {
 
