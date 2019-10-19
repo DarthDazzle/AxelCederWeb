@@ -21,7 +21,7 @@ $(document).ready(function(){
 $('video').on('ended pause',function(){
 	$('#toHide').fadeTo(0,0,function() {
 		$('#imgLogo').fadeTo(0,1);
-		$("#over").animate({backgroundColor: "#343538" }, 1000);	
+		$(".over").animate({backgroundColor: "#343538" }, 1000);	
 		document.getElementById("toHide").style.display="none";  
 
 	});
