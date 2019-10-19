@@ -41,7 +41,7 @@
 							</div>
 						</a>
 						<div style="-webkit-box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52); 
-							box-shadow: inset 7px 7px 10px 5px rgba(0,0,0,0.52); top:0; left:0; width:100%;height:100%">
+							box-shadow: inset 7px 7px 10px 5px rgba(0,0,0,0.52); top:0; left:0; width:100%;height:100%; position:absolute">
 						</div>
 					</div>
 				<?php endforeach ?>

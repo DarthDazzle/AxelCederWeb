@@ -376,7 +376,6 @@ div#seg2 {
 	padding: 3px 8px;
 	color: #374447;
 	background: white;
-	display: inline-block;
 	border-radius: 2px;
 	border: 1px solid #374447;
 	box-shadow: 3px 2px 2px;
@@ -402,7 +401,9 @@ div#seg2 {
 	height: 100%;
 	padding: 0px 5px;
 	font-weight: 200;
-    font-family: 'Noto Serif', serif;
+	font-family: 'Noto Serif', serif;
+	display: inline-block;
+	vertical-align: top;
 }
 .content .post .post_info {
 	color: #222;
