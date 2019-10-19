@@ -14,7 +14,7 @@
 	
 	<?php include '../header.php'; ?>
 	<body>
-		<div class="over">
+		<div id="over">
 			<div class="section" id="section1" style="text-align:left; height:100%">
 				<h1 style="text-align:center"><?php echo $lang['about']?></h1>
 				<img src="../resources/image/about/uppr.png" class="cornerPara">
