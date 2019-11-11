@@ -37,16 +37,14 @@
 					<img src="<?php echo BASE_URL . 'static/images/' . $post['image']; ?>" class="post_image" alt="">
 					</td>
 					<td colspan="80%" style="vertical-align: top;">
-					<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
 							<div class="post_info" style="overflow: hidden; height: 7vw; margin: 1vw; margin-bottom:0;">
 								<h3><?php echo $post['title'] ?></h3>
 								<div class="info">
-									<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
-									<span><?php echo $post['body'] ?></span>
+									<pre><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></pre>
+									<span style="font-family: serif;"><?php echo $post['body'] ?></span>
 									<!-- <span class="read_more">Read more...</span> --->
 								</div>
 							</div>
-						</a>
 						<div style="pointer-events: none; -webkit-box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52); 
 							box-shadow: inset 7px 7px 10px 5px rgba(0,0,0,0.52); top:0; left:0; width:100%;height:100%; position:absolute">
 						</div>
