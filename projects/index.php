@@ -27,8 +27,8 @@
 ">Work In Progress</h3>
 		</div>
 	</div>
-	<div class="bottombox">
-		<div class="container">
+	<div class="bottombox" style="width:100vw; text-align:center;">
+		<div class="container" style="display: inline-block; text-align: left">
 
 			<div class="content">
 				<?php foreach ($posts as $post): ?>
