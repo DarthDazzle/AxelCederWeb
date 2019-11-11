@@ -33,12 +33,12 @@
 					<div class="post" style="margin-left: 0px;">
 					<table>
 					<tr height=10vh>
-					<td colspan="20%">
+					<td colspan="20%" style="height:8wv; display: inline-block; overflow: hidden;">
 					<img src="<?php echo BASE_URL . 'static/images/' . $post['image']; ?>" class="post_image" alt="">
 					</td>
-					<td>
+					<td colspan="80%" style="vertical-align: top;">
 					<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
-							<div class="post_info">
+							<div class="post_info" style="overflow: hidden; height: 7vw; margin: 1vw; margin-bottom:0;">
 								<h3><?php echo $post['title'] ?></h3>
 								<div class="info">
 									<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
