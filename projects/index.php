@@ -28,11 +28,11 @@
 		</div>
 	</div>
 	<div class="bottombox" style="width:100vw; text-align:center;">
-		<div class="container" style="max-width:80vw; display: inline-block; text-align: left; width=80vh;">
+		<div class="container" style="max-width:80vw; display: inline-block; text-align: left; width:80vh;">
 
 			<div class="content">
 				<?php foreach ($posts as $post): ?>
-					<div class="post">
+					<div class="post" style="width:80vh; max-width:80wv;">
 					<table>
 					<tr height=10vh>
 					<td colspan="20%" style="min-height: 100px; height:8vw; display: inline-block; overflow: hidden;">
