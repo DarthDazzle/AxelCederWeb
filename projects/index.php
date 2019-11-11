@@ -3,7 +3,7 @@
 
 <?php $posts = getPublishedPosts(); ?>
 <!DOCTYPE html>	
-<html>
+<html style="width:100vw">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
