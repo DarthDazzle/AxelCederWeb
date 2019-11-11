@@ -33,7 +33,7 @@
 					<div class="post" style="margin-left: 0px;">
 					<table>
 					<tr height=10vh>
-					<td colspan="20%" style="height:8wv; display: inline-block; overflow: hidden;">
+					<td colspan="20%" style="height:8vw; display: inline-block; overflow: hidden;">
 					<img src="<?php echo BASE_URL . 'static/images/' . $post['image']; ?>" class="post_image" alt="">
 					</td>
 					<td colspan="80%" style="vertical-align: top;">
