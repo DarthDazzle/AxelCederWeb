@@ -22,6 +22,9 @@
 	<div id="over">
 		<div class="section" id="section2" style="height:100%">
 			<h1><?php echo $lang['project']?></h1>
+			<h3 style="
+    color: red;
+">Work In Progress</h3>
 		</div>
 	</div>
 	<div class="bottombox">
@@ -41,7 +44,7 @@
 								<h3><?php echo $post['title'] ?></h3>
 								<div class="info">
 									<pre><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></pre>
-									<span style="font-family: serif;"><?php echo $post['body'] ?></span>
+									<span style="font-style: normal; font-family: serif;"><?php echo $post['body'] ?></span>
 									<!-- <span class="read_more">Read more...</span> --->
 								</div>
 							</div>
