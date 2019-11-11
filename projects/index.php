@@ -28,7 +28,6 @@
 		</div>
 	</div>
 	<div class="bottombox">
-		Work in progress
 		<div class="container">
 
 			<div class="content">
@@ -36,11 +35,11 @@
 					<div class="post">
 					<table>
 					<tr height=10vh>
-					<td colspan="20%" style="height:8vw; display: inline-block; overflow: hidden;">
+					<td colspan="20%" style="min-height: 100px; height:8vw; display: inline-block; overflow: hidden;">
 					<img src="<?php echo BASE_URL . 'static/images/' . $post['image']; ?>" class="post_image" alt="">
 					</td>
-					<td colspan="80%" style="vertical-align: top;">
-							<div class="post_info" style="overflow: hidden; height: 7vw; margin: 1vw; margin-bottom:0;">
+					<td colspan="80%" style="min-height: 100px; vertical-align: top;">
+							<div class="post_info" style="min-height: 100px; overflow: hidden; height: 7vw; margin: 1vw; margin-bottom:0;">
 								<h3><?php echo $post['title'] ?></h3>
 								<div class="info">
 									<pre><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></pre>
