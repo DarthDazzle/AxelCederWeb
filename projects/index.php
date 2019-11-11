@@ -25,6 +25,7 @@
 		</div>
 	</div>
 	<div class="bottombox">
+		Work in progress
 		<div class="container">
 
 			<div class="content">
@@ -35,10 +36,8 @@
 					<td colspan="20%">
 					<img src="<?php echo BASE_URL . 'static/images/' . $post['image']; ?>" class="post_image" alt="">
 					</td>
-					</tr>
-					</table>
-						
-						<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
+					<td>
+					<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
 							<div class="post_info">
 								<h3><?php echo $post['title'] ?></h3>
 								<div class="info">
@@ -51,6 +50,11 @@
 						<div style="-webkit-box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52); 
 							box-shadow: inset 7px 7px 10px 5px rgba(0,0,0,0.52); top:0; left:0; width:100%;height:100%; position:absolute">
 						</div>
+					</td>
+					</tr>
+					</table>
+						
+
 					</div>
 				<?php endforeach ?>
 				<!-- more content still to come here ... -->
