@@ -28,7 +28,7 @@
 		</div>
 	</div>
 	<div class="bottombox" style="width:100vw; text-align:center;">
-		<div class="container" style="display: inline-block; text-align: left">
+		<div class="container" style="max-width:80vw; display: inline-block; text-align: left; width=80vh;">
 
 			<div class="content">
 				<?php foreach ($posts as $post): ?>
