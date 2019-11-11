@@ -30,7 +30,7 @@
 
 			<div class="content">
 				<?php foreach ($posts as $post): ?>
-					<div class="post" style="margin-left: 0px;">
+					<div class="post">
 					<table>
 					<tr height=10vh>
 					<td colspan="20%" style="height:8vw; display: inline-block; overflow: hidden;">
@@ -43,11 +43,11 @@
 								<div class="info">
 									<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
 									<span><?php echo $post['body'] ?></span>
-									<span class="read_more">Read more...</span>
+									<!-- <span class="read_more">Read more...</span> --->
 								</div>
 							</div>
 						</a>
-						<div style="-webkit-box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52); 
+						<div style="pointer-events: none; -webkit-box-shadow: inset 5px 5px 7px 1px rgba(0,0,0,0.52); 
 							box-shadow: inset 7px 7px 10px 5px rgba(0,0,0,0.52); top:0; left:0; width:100%;height:100%; position:absolute">
 						</div>
 					</td>
