@@ -391,7 +391,8 @@ div#seg2 {
 	opacity: 1;
 }
 .content .post .post_image {
-	width: 30vw;
+	max-width: 40vw;
+	width: 50vh;
 	text-align: left;
 	background-size: 100%;
 	display: inline-block;
