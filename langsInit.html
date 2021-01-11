@@ -8,5 +8,5 @@ if (isset($_GET['lang']) === true && in_array($_GET['lang'], $allowed_lang) === 
 } else if (isset($_SESSION['lang']) === false) {
 	$_SESSION['lang'] = 'english';
 }
-include 'lang/' . $_SESSION['lang'] . '.php';
+include 'lang/' . $_SESSION['lang'] . '.html';
 ?>
