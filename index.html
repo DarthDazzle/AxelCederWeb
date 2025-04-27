@@ -1,23 +1,4 @@
 <!doctype html>
-<!-- <html xmlns="http://www.w3.org/1999/xhtml">
-<?php
-$site_key = '6LckV5IUAAAAAGIevj7wwo-aLOq8bM91j6pOMctN';
-$secret_key = '6LckV5IUAAAAAGL02EJ7j6SHwonfTSNWZR1REp9D';
- 
-if (isset($_POST['g-recaptcha-response'])) {
- 
-    //get verify response data
-    $verifyCaptchaResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_key.'&response='.$_POST['g-recaptcha-response']);
-    $responseCaptchaData = json_decode($verifyCaptchaResponse);
-    if($responseCaptchaData->success) {
-        echo 'Captcha verified';
-        //proceed with form values
-    } else {
-        echo 'Verification failed';
-    }
-}
-?> -->
-
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,9 +13,15 @@ if (isset($_POST['g-recaptcha-response'])) {
 
 	<link rel="shortcut icon" href="resources/image/logo/ico.png" type="image/png">
 </head>
-<?php
-include 'header.html';
-?>
+
+<div id="header" style="overflow: hidden">
+	<ul id="nav">
+		<li class="menuItems"><a href="/">Home</a></li>
+		<li class="menuItems"><a href="/about">About</a></li>
+		<li class="menuItems"><a href="/projects">Projects</a></li>
+	</ul>
+</div>
+
 <body>
 	<div id="fullpage" >
 		<script type="text/javascript">
@@ -61,71 +48,12 @@ include 'header.html';
 			</div>
 		</div>
 		<div class="section" id="section1" style="text-align:left">
-			<h1 style="text-align:center"><a href="/about">About<?php echo $lang['about'] ?></a></h1>
+			<h1 style="text-align:center"><a href="/about">About</a></h1>
 			<img src="../resources/image/about/uppr.png" class="cornerPara" id="show" style="opacity:0">
 		</div>
 		<div class="section" id="section2">
-			<h1 style="text-align:center"><a href="/projects">Projects<?php echo $lang['project'] ?></a></h1>
+			<h1 style="text-align:center"><a href="/projects">Projects</a></h1>
 		</div>
-		<!-- <div class="section" id="section3"  style="padding-top:30px" >
-			<h1 style="padding-top:10vh"><?php echo $lang['contact'] ?><br><br></h1>			 
-			<form method="post" id="userForm">
-				<button class="g-recaptcha btn btn-primary" data-sitekey="<?php echo $site_key; ?>" data-callback="submitForm">Submit</button>
-			</form>
-			
-			<script src='https://www.google.com/recaptcha/api.js'></script>
-			<script>
-			function submitForm() {
-				document.getElementById('userForm').submit();
-			}
-			</script>
-  		</div> -->
 	</div>
-
-<!-- 
-<script type='text/javascript'>
-	function sendMail() {
-	$(document.getElementById("msgSent1")).css({'opacity' : '0'});
-	$(document.getElementById("msgSent2")).css({'opacity' : '0'});
-	$(document.getElementById("msgSent3")).css({'opacity' : '0'});
-	var vname = document.getElementById("vname").value;
-	var vemail = document.getElementById("vemail").value;
-	var msg = document.getElementById("msg").value;
-	// Returns successful data submission message when the entered information is stored in database.
-	var dataString = 'vname=' + vname + '&vemail=' + vemail + '&msg=' + msg;
-	if (vname == '' || vemail == '' || msg == '') {
-		$(document.getElementById("msgSent1")).css({'opacity' : '1'});
-	} else {
-		$(document.body).css({'cursor' : 'wait'});
-
-		$(document.getElementById("send")).css({'cursor' : 'wait'});
-		$('vname').val=("");
-		// AJAX code to submit form.
-		$.ajax({
-		type: "POST",
-		url: "secure_email_code.php",
-		data: dataString,
-		cache: false,
-		success: function(html) {
-			if(html == '1') {
-				$("input").prop('disabled', true);
-				$("textarea").prop('disabled', true);
-				$("input").css({'opacity' : '0.6'});
-				$("textarea").css({'opacity' : '0.6'});
-				$(document.body).css({'cursor' : 'default'});
-				$(document.getElementById("send")).css({'cursor' : 'default'});
-				$(document.getElementById("msgSent3")).css({'opacity' : '1'});
-			} else {
-				$(document.getElementById("msgSent2")).css({'opacity' : '1'});
-				$(document.body).css({'cursor' : 'default'});
-				$(document.getElementById("send")).css({'cursor' : 'pointer'});
-			}
-		}
-	});
-	}
-
-	return false;
-}
-	</script> -->
 </body>
 <html>
