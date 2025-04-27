@@ -1,0 +1,419 @@
+
+@font-face {
+    font-family: 'Arkhip'; /*a name to be used later*/
+    src: url('../fonts/Arkhip_font.ttf'); /*URL to font*/
+}
+@font-face {
+	font-family: 'Tratex';
+	src: url('../fonts/trats.ttf');
+}		
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arkhip';
+	color:#F4F4F4;
+}
+body {
+	background-color: #343538;
+	overflow-x:hidden;
+}
+
+/* Test for Customscrollbar */
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+	font-size: 8vmin;
+	margin:0;
+	padding-top:40vh;
+	text-shadow: 5px 10px 5px rgba(0,0,0,0.6), 10px 5px 5px rgba(0,0,0,0.2), 10px 10px 5px rgba(0,0,0,0.2);
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	text-align:center;
+}
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3{
+	background-size: cover;
+	background-attachment: fixed;
+	z-index:1;
+}
+
+#proj1 {
+	height:40vh;
+	max-width: 50%;
+	margin: auto;
+	padding: 50px;
+	font-family: 'Arkhip';
+	color:#F4F4F4;
+}
+/* Defining each section background and styles
+* --------------------------------------- */
+#section1{
+	background-image: url(../resources/image/about/mountain.jpg);
+}
+#section2{
+	background-image: url(../resources/image/projects/placeholder.jpg);
+}
+#over {
+	background-color: #000000;
+    width:100%;
+    height:100vh;
+	text-align: center; /*handles the horizontal centering*/
+}
+
+.bottombox {
+	position: absolute;
+	top: 100vh;
+}
+
+div#form_sample{
+text-align:center;
+border:1px solid #ccc;
+width:300px;
+padding:0 50px 15px;
+margin-top:20px;
+box-shadow:0 0 15px;
+border-radius:6px;
+float:left;
+
+}
+input[type="text"]{
+width:900px;
+max-width:85vw;
+margin-top:10px;
+height:35px;
+margin-bottom:25px;
+padding:10px;
+border:3px solid #53524C;
+color:black;
+}
+textarea{
+width:900px;
+max-width:85vw;
+border:3px solid #53524C;
+padding:10px;
+margin-bottom:25px;
+margin-top:10px;
+height:100px;
+resize:none;
+color:black;
+}
+#send{
+width:900px;
+max-width:85vw;
+padding:10px 45px;
+background-color:#53524C;
+border:none;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+}
+
+.cornerPara{
+	position:absolute;
+	width:auto;
+	height:auto;
+	max-width:20vw;
+	max-height:80%;
+	vertical-align: bottom;
+	padding-left:5%;
+	bottom:0;
+}
+.Centerer 
+{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #eee;
+}
+
+ul#nav {
+	border: 1px solid #000;
+	list-style-type:none;
+	margin: 0;
+	overflow: hidden;
+	padding-right:2vw;
+	padding-left:1vw;
+	top:0px;
+	left:0px;
+	right:0px;
+	font-size:2vh
+}
+
+div#header {
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	z-index:100;
+	outline: none;
+	background-color: #2C2C2C;
+}
+
+li a {
+	display:inline-block;
+	text-align:center;
+	padding: 14px 16px;
+}
+li a:hover {
+    background-color: #7C775E;
+}
+li a:active {
+	background-color: #414654;
+}
+
+.textBox {
+	margin-left:10vw;
+	margin-top:20vh;
+	top:10vh;
+	margin-right:10vw;
+	margin-bottom:10vh;
+	padding:10px;
+	bottom:0px;
+	background-color: 74716F;
+}
+.langs {
+	float:right;
+}
+.menuItems {
+	float:left;
+}
+
+.homeButton {
+	background:url(../resources/image/icon/menu/home.png) no-repeat;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	height: 4vh;
+	width: 4vh;
+	margin-left:0px;
+	padding-right:10px;
+	float: left;
+}
+
+.show {display:block;}
+
+.imgLog {
+	z-index: 1;
+	max-width: 70vw;
+	max-height: 70vh;
+	width: auto;
+	height: auto;
+    vertical-align: middle;	
+	display:none;
+}
+.shadowed {
+    -webkit-filter: drop-shadow(36px 24px 8px rgba(0,0,0,0.8));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=36, OffY=24, Color='#000')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=36, OffY=24, Color='#000')";
+	filter: drop-shadow(36px 24px 8px rgba(0,0,0,0.8))
+}
+
+.video {
+	z-index: 1;
+	max-width: 70vw;
+	max-height: 70vh;
+	width: auto;
+	height: auto;
+    display: inline-block;
+    vertical-align: middle;	
+}
+
+div#seg1 {
+	height:100vh;
+}
+
+div#seg2 {
+	height:100vh;
+	top:100vh;
+}
+
+.sidenav {
+    height: 100%;
+    width: 25vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #343538;
+    overflow-x: hidden;
+    padding-top: 90px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	margin-top: 15px;
+}
+
+#main {
+	text-align: center;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#box {
+	margin: 10px;
+	background: #ddd;
+	width: 95%;
+	height: 40%;
+	display: none;
+	position: relative;
+}
+#commentbox {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 20%;
+	margin: 20px;
+	font-family: sarif;
+	font-size: 20px;
+}
+#imagebox {
+	display:inline-block;
+	margin: 1vw;
+	width: 60%;
+	height: 60%;
+	padding:1px;
+	border:1px solid #021a40;
+   background-color:#343538;
+}
+.helper {
+	height: 100%;
+}
+#regbox {
+	background: url(../resources/image/map/reg.png);
+	position: absolute;
+	left: 67.5%;
+	top: 5%;
+	width: 30%;
+	height: 8%;
+	background-size: cover;
+	text-align: center;
+	font-family: Tratex;
+	font-size: 140%;
+	padding-left:5px;
+}
+#image {
+	max-width: 100%;
+	max-height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#map {
+	height: 100%;
+	width: 75vw;
+	margin-left: 100vw;
+    transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+}
+
+.container {
+	width: 80vw;
+	margin: 0px auto;
+}
+
+.content {
+	margin: 5px auto;
+	border-radius: 5px;
+	min-height: 400px;
+}
+.content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.content .content-title {
+	margin: 10px 0px;
+	color: #374447;
+	font-family: 'Averia Serif Libre', cursive;
+}
+.content .post {
+	min-height: 100px;
+	width: 80vw;
+	margin: 9px;
+	float: left;
+	border-radius: 2px;
+	position: relative;
+	background: #343538;
+	vertical-align: top;
+}
+.content .post .category {
+	margin-top: 0px;
+	padding: 3px 8px;
+	color: #374447;
+	background: white;
+	border-radius: 2px;
+	border: 1px solid #374447;
+	box-shadow: 3px 2px 2px;
+	position: absolute;
+	left: 5px; top: 5px;
+	z-index: 3;
+}
+.content .post .category:hover {
+	box-shadow: 3px 2px 2px;
+	color: white;
+	background: #374447;
+	transition: .4s;
+	opacity: 1;
+}
+.content .post .post_image {
+	max-width: 40vw;
+	width: 50vh;
+	text-align: left;
+	background-size: 100%;
+	display: inline-block;
+}
+
+.content .post .post_info {
+	height: 100%;
+	padding: 0px 5px;
+	margin: 10px;
+	font-weight: 200;
+	font-family: 'Noto Serif', serif;
+	display: inline-block;
+	vertical-align: top;
+}
+.content .post .post_info {
+	color: #222;
+}
+.content .post .post_info span {
+	color: #A6A6A6;
+	font-style: italic;
+}
+.content .post .post_info span.read_more {
+	position: absolute;
+	right: 5px; bottom: 5px;
+}

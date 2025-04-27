@@ -1,0 +1,11 @@
+{
+"companyName": "Axel&Whatevs",
+"productName": "Lets Try Something Else",
+"dataUrl": "testOutput.data.unityweb",
+"asmCodeUrl": "testOutput.asm.code.unityweb",
+"asmMemoryUrl": "testOutput.asm.memory.unityweb",
+"asmFrameworkUrl": "testOutput.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
